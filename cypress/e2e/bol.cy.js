@@ -7,7 +7,7 @@ describe("example to-do app", () => {
 
     it("homepage", () => {
         // 👇 That's how we take screenshot
-        cy.argosScreenshot('HomePage', { blackout: [ '[data-group-name="Flexbanner"]'] });
+        cy.argosScreenshot('HomePage', { blackout: ['[data-test="main-banner-image"]', '[data-group-name="Flexbanner"]'] });
     });
 
     it("Login", () => {
