@@ -7,14 +7,16 @@ describe("example to-do app", () => {
 
     it("homepage", () => {
         // 👇 That's how we take screenshot
-        cy.argosScreenshot("HomePage");
+        cy.argosScreenshot('HomePage', { blackout: ['[data-test="main-banner-image"]'] });
     });
 
     it("Login", () => {
+        cy.visit('https://www.bol.com/nl/account/login.html?redirectUrl=/nl/rnwy/account/overzicht')
         cy.argosScreenshot("Login");
     });
 
     it("Klantenservice", () => {
+        cy.visit('https://www.bol.com/nl/nl/klantenservice/index.html')
         cy.argosScreenshot("Klantenservice");
     });
 
