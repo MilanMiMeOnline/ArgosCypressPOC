@@ -2,6 +2,7 @@ describe("example to-do app", () => {
     beforeEach(() => {
       //  cy.setCookie("bolConsentChoices",'source#OFC|version#6|int-tran#true|ext-tran#true|int-beh#true|ext-beh#true',
      //   { domain :'http://www.bol.com'})
+     //sum fekking changes
         cy.visit("https://www.bol.com/nl/nl/");
     });
 
