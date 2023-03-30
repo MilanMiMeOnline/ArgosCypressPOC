@@ -15,7 +15,7 @@ describe("example to-do app", () => {
     });
 
     it("Klantenservice", () => {
-        cy.argosScreenshot("Login");
+        cy.argosScreenshot("Klantenservice");
     });
 
 
