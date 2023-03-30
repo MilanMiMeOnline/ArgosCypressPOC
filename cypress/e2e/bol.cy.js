@@ -7,15 +7,18 @@ describe("example to-do app", () => {
 
     it("homepage", () => {
         // 👇 That's how we take screenshot
-        cy.argosScreenshot('HomePage', { blackout: ['[data-test="main-banner-image"]'] });
+        cy.argosScreenshot('HomePage', { blackout: ['[data-test="main-banner-image"]', '[data-group-name="Flexbanner"]'] });
     });
 
     it("Login", () => {
+        cy.wait(500)
         cy.visit('https://www.bol.com/nl/account/login.html?redirectUrl=/nl/rnwy/account/overzicht')
         cy.argosScreenshot("Login");
     });
 
     it("Klantenservice", () => {
+        cy.wait(500)
+
         cy.visit('https://www.bol.com/nl/nl/klantenservice/index.html')
         cy.argosScreenshot("Klantenservice");
     });
