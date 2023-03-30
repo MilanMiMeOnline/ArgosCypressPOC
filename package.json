@@ -2,5 +2,8 @@
   "dependencies": {
     "@argos-ci/cypress": "^0.0.6",
     "cypress": "^12.9.0"
+  },
+  "devDependencies": {
+    "@argos-ci/cli": "^0.4.4"
   }
 }
