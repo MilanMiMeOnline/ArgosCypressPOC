@@ -35,6 +35,6 @@ jobs:
       - name: Upload screenshots to Hackaton repo
         continue-on-error: true
         env:
-          ARGOS_TOKEN: ${{ f4df7c9a73f8e5177584058847a9c23cdecbb99c }}
+          ARGOS_TOKEN: f4df7c9a73f8e5177584058847a9c23cdecbb99c
         # 👇 change "./screenshots" by your screenshots folder path
         run: npx @argos-ci/cli upload ./screenshots
